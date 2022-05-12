@@ -7,6 +7,6 @@ namespace ConsoleGame.cs
 {
     public class Repository
     {
-        
+    
     }
 }
