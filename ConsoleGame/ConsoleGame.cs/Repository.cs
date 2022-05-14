@@ -49,21 +49,21 @@ namespace ConsoleGame.cs
      
 
     
-    switch (computer)
+    switch (player)
      
     {
     case "rock":
-        if (player == "paper")
+        if (computer == "paper")
     {
         Console.Write("Computer played" + computer);
         Console.WriteLine("You Win!!!");
     } 
-        else if (player == "scissors")
+        else if (computer == "scissors")
     {
         Console.Write("Computer played" + computer);
         Console.WriteLine("You Lose Bitch!!!!");
     } 
-        else if (player == "rock")
+        else if (computer == "rock")
     {
         Console.Write("Computer played" + computer);
         Console.WriteLine("It's A Tie!!!");
@@ -72,17 +72,17 @@ namespace ConsoleGame.cs
 
     case "paper":
     
-        if (player == "rock")
+        if (computer == "rock")
     {
         Console.Write("Computer played" + computer);
         Console.WriteLine("You Lose!!!");
     }
-        else if (player == "Scissors")
+        else if (computer == "Scissors")
     {
         Console.Write("Computer played" + computer);
         Console.WriteLine("You Win!!!");
     }
-        else if (player == "paper")
+        else if (computer == "paper")
     {
         Console.Write("Computer played" + computer);
         Console.WriteLine("It's A Tie!!!");
@@ -93,17 +93,17 @@ namespace ConsoleGame.cs
     
     case "scissors":
     
-        if (player == "rock")
+        if (computer == "rock")
     {
         Console.Write("Computer played" + computer);
         Console.WriteLine("You Win!!!");
     }
-        else if (player == "Paper")
+        else if (computer == "Paper")
     {
         Console.Write("Computer played" + computer);
         Console.WriteLine("You Lose!!!");
     }
-        else if (player == "scissors")
+        else if (computer == "scissors")
     {
         Console.Write("Computer played" + computer);
         Console.WriteLine("It's a Tie!!!");

@@ -15,7 +15,7 @@ _rps.RockPaperScissors();
 // string player = "";
 // _rps.options[optionsIndex.Next(options.Length)]();
 
-string computer = options[optionsIndex.Next()];
+string computer = options[optionsIndex.Next(options.Length)];
 // while (isRunning)
 // {
 // Console.WriteLine("Choose Rock, Paper or Scissors");
