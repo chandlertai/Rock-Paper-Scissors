@@ -7,7 +7,7 @@ namespace ConsoleGame.cs
 {
     public class Repository
     {
-        //wrapping the choises to enter in this while loop powered by a bool will keep our players from being able to enter anything other than Rock, Paper, Scissors
+        //wrapping the choices to enter in this while loop powered by a bool will keep our players from being able to enter anything other than Rock, Paper, Scissors
     public void RockPaperScissors()
     {
     // string[] options = {"rock", "paper", "scissors"};
@@ -16,8 +16,8 @@ namespace ConsoleGame.cs
     // int computer = Random.Next(1, 3);
     string computer = "";
 
-     while (isRunning)
-     {
+    while (isRunning)
+    {
     string player = "";
     // string answer = "";
 
@@ -122,5 +122,5 @@ namespace ConsoleGame.cs
     
     
     
-     
+    
     
