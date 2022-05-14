@@ -23,10 +23,10 @@ namespace ConsoleGame.cs
 
          while(player != "rock" && player != "paper" && player != "scissors")
           {
-             Console.WriteLine("Please choose either Rock, Paper, or Scissors");
+             Console.WriteLine("Please enter the number for your choice: \n 1. Rock  \n 2. Paper \n  3. Scissors");
             player = Console.ReadLine();
 
-            // string computer = options[optionsIndex.Next(options.Length)];
+            //string[] computer = options[optionsIndex.Next(options.Length)];
           }
         //  Console.WriteLine(player);
         // Console.WriteLine(computer);
