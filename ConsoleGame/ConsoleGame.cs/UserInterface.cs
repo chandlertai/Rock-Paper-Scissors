@@ -27,20 +27,7 @@ namespace ConsoleGame.cs
                     Console.WriteLine("Please enter the number for your choice: \n 1. Rock  \n 2. Paper \n 3. Scissors \n 4. Exit");
                     player = Convert.ToInt32(Console.ReadLine());
                 }
-                // switch (computerSelect)
-                // {
-                //     case "rock":
-                //         computer = "rock";
-                //         break;
-                //     case "paper": 
-                //         computer = "paper";
-                //         break;
-                //     case "scissors":
-                //         computer = "scissors";
-                //         break;
-                // }
-                // Console.WriteLine("Computer chose " + computer);
-                // Console.WriteLine("Player chose " + player);
+           
 
                 int computerSelect = _repo.computerChoice();
 
