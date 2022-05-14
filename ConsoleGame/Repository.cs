@@ -7,6 +7,6 @@ namespace ConsoleGame
 {
     public class Repository
     {
-    
+        
     }
 }
