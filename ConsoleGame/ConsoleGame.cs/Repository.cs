@@ -12,7 +12,6 @@ namespace Rock.Repository
             Random kickRocks = new Random();
             int computerRandom = kickRocks.Next(1, 3);
 
-            //store number in variable and return
             return computerRandom;
         }
     }
