@@ -9,27 +9,28 @@ namespace ConsoleGame.cs
     public class UserInterface
     {
         Repository _repo = new Repository();
-        //wrapping the choices to enter in this while loop powered by a bool will keep our players from being able to enter anything other than Rock, Paper, Scissors
+        
         public void RockPaperScissors()
         {
             
             bool isRunning = true;
-           
+            int playerScore = 0;
+            int computerScore = 0;
 
             while (isRunning)
             {
                 
 
-                Console.WriteLine("Please enter the number for your choice: \n 1. Rock  \n 2. Paper \n 3. Scissors");
-
+                Console.WriteLine("Please enter the number for your choice: \n 1. Rock  \n 2. Paper \n 3. Scissors \n 4. Exit");
+                Console.WriteLine($"The Score is {playerScore}, {computerScore}");
                 int player = Convert.ToInt32(Console.ReadLine());
-                while (player != 1 && player != 2 && player != 3)
+                if (player != 1 && player != 2 && player != 3 && player != 4)
                 {
-                    Console.WriteLine("Please enter the number for your choice: \n 1. Rock  \n 2. Paper \n 3. Scissors");
+                    Console.WriteLine("Please enter the number for your choice: \n 1. Rock  \n 2. Paper \n 3. Scissors \n 4. Exit");
+
 
                 }
                
-
                 // switch (computerSelect)
                 // {
                 //     case "rock":
@@ -54,11 +55,13 @@ namespace ConsoleGame.cs
                         {
                             Console.Write("Computer played Rock, ");
                             Console.WriteLine("You Win!!!");
+                            playerScore++;
                         }
                         else if (player == 3)
                         {
                             Console.Write("Computer played Rock, ");
                             Console.WriteLine("You Lose Bitch!!!!");
+                            computerScore++;
                         }
                         else if (player == 1)
                         {
@@ -73,11 +76,13 @@ namespace ConsoleGame.cs
                         {
                             Console.Write("Computer played Paper, ");
                             Console.WriteLine("You Lose!!!");
+                            computerScore++;
                         }
                         else if (player == 3)
                         {
                             Console.Write("Computer played Paper, ");
                             Console.WriteLine("You Win!!!");
+                            playerScore++;
                         }
                         else if (player == 2)
                         {
@@ -94,11 +99,13 @@ namespace ConsoleGame.cs
                         {
                             Console.Write("Computer played Scissors, ");
                             Console.WriteLine("You Win!!!");
+                            playerScore++;
                         }
                         else if (player == 2)
                         {
                             Console.Write("Computer played Scissors, ");
                             Console.WriteLine("You Lose!!!");
+                            computerScore++;
                         }
                         else if (player == 3)
                         {
@@ -106,10 +113,21 @@ namespace ConsoleGame.cs
                             Console.WriteLine("It's a Tie!!!");
                         }
                         break;
-                }
+
+                    case 4:
+
+                    isRunning = false;
+                    break;
+            
+                 }
+                
             }
         }
     }
+                //    if(isRunning == false)
+                //    {
+                //        Console.WriteLine("Thanks for playing!");
+                //    }
 }
 
 

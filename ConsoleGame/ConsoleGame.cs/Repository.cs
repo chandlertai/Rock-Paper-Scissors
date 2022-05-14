@@ -15,4 +15,31 @@ namespace Rock.Repository
             return computerRandom;
         }
     }
+
+
+        // public bool playAgain()
+        // {
+        //     bool play = true;
+        //     Console.WriteLine("Play Again? Select Y or N.");
+        //     string answer = Console.ReadLine().ToUpper();
+        //     if (answer == "Y")
+        //     {
+        //         play = true;
+        //     }
+        //     else { play = false;}
+        //     return play;
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
 }
+       
