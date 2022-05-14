@@ -10,7 +10,7 @@ namespace Rock.Repository
         public int computerChoice()
         {
             Random kickRocks = new Random();
-            int computerRandom = kickRocks.Next(1, 3);
+            int computerRandom = kickRocks.Next(1, 4);
 
             return computerRandom;
         }
